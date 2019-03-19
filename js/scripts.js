@@ -1,7 +1,7 @@
-$(document).ready(() => {
+$(document).ready(function() {
     $('#mycarousel').carousel({ interval: 2000 })
 
-    $('#carouselButton').click(() => {
+    $('#carouselButton').click(function() {
         if($('#carouselButton').children('span').hasClass('fa-pause')) {
             $('#mycarousel').carousel('pause')
             $('#carouselButton').children('span').removeClass('fa-pause')
@@ -14,11 +14,11 @@ $(document).ready(() => {
         }
     });
 
-    $('#reservButton').click(() => {
+    $('#reservButton').click(function() {
         $('#reserveModal').modal('show')
     })
 
-    $('#loginButton').click(() => {
+    $('#loginButton').click(function(){
         $('#loginModal').modal('show')
     })
 });
