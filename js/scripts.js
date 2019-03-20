@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#mycarousel').carousel({ interval: 2000 })
+    $('#mycarousel').carousel({ interval: 2000 });
 
     $('#carouselButton').click(function() {
         if($('#carouselButton').children('span').hasClass('fa-pause')) {
@@ -16,9 +16,9 @@ $(document).ready(function() {
 
     $('#reservButton').click(function() {
         $('#reserveModal').modal('show')
-    })
+    });
 
     $('#loginButton').click(function(){
         $('#loginModal').modal('show')
-    })
+    });
 });
